@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.pagina {
+    width: 95%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    background: salmon;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.encabezado h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.menu {
+    background: #00c99a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 18px;
+    font-size: 11px;
+}
+
+.idiomas a {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.contenido {
+    display: flex;
+    flex: 1;
+    gap: 15px;
+    padding: 15px;
+}
+
+.lateral {
+    flex: 3;
+}
+
+.blog {
+    flex: 7;
+}
+
+.lateral h3,
+.blog h2 {
+    margin-bottom: 12px;
+}
+
+.imagen-cuadrada,
+.imagen-pequena,
+.imagen-grande {
+    background: #ccc;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.imagen-cuadrada {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.imagen-pequena {
+    width: 100%;
+    height: 100px;
+}
+
+.imagen-grande {
+    width: 100%;
+    height: 200px;
+    font-size: 28px;
+}
+
+.entrada {
+    margin-bottom: 25px;
+}
+
+.entrada h5 {
+    margin-bottom: 10px;
+}
+
+.entrada p {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.pie {
+    background: #ddd;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+@media (max-width: 650px) {
+    .menu,
+    .contenido {
+        flex-direction: column;
+    }
+
+    .enlaces {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu a {
+        margin: 0;
+    }
+
+    .idiomas {
+        margin-top: 12px;
+    }
+}

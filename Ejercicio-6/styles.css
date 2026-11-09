@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #93d9e9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planes {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 18px;
+}
+
+.plan {
+    background: white;
+    width: 250px;
+    min-height: 480px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px #888;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.plan h2 {
+    background: salmon;
+    padding: 20px 8px;
+    font-size: 17px;
+}
+
+.detalles {
+    padding: 20px 10px;
+    flex: 1;
+}
+
+.detalles p {
+    font-size: 11px;
+    padding: 9px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan button {
+    border: none;
+    background: #eee;
+    padding: 10px;
+    margin: 15px auto;
+    width: 65%;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .planes {
+        flex-wrap: wrap;
+    }
+}

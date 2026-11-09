@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu-vertical {
+    width: 250px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.opcion {
+    background-color: #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.opcion a {
+    background-color: white;
+    color: black;
+    padding: 2px 5px;
+    text-decoration: none;
+}
